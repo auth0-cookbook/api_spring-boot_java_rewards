@@ -7,13 +7,13 @@ You can use this sample to learn how to secure a Spring Boot API server with Aut
 Clone the repository: 
 
 ```bash
-git clone git@github.com:auth0-cookbook/api_spring-boot_javascript_customers.git
+git clone git@github.com:auth0-cookbook/api_spring-boot_javascript_rewards.git
 ```
 
 Make the project directory your current directory:
 
 ```bash
-cd api_spring-boot_javascript_customers
+cd api_spring-boot_javascript_rewards
 ```
 
 Install the project dependencies using Gradle:
@@ -39,9 +39,9 @@ Finally, run the project by executing the following command:
 
 These endpoints require the request to include an access token issued by Auth0 in the authorization header.
 
-#### 🔐 Get customer rewards data
+#### 🔐 Get rewards data
 
-Provides customer rewards data using a customer ID.
+Provides rewards data using a customer ID.
 
 ```bash
 GET /api/rewards/:id
@@ -49,13 +49,13 @@ GET /api/rewards/:id
 
 ##### Response
 
-###### If customer data is not found
+###### If rewards data is not found
 
 ```bash
 Status: 404 Not Found
 ```
 
-###### If customer data is found
+###### If rewards data is found
 
 ```bash
 Status: 200 OK
@@ -81,9 +81,9 @@ Open the [APIs section of the Auth0 Dashboard](https://manage.auth0.com/#/apis),
 
 Fill out the form that comes up:
 
-- **Name:** Auth0 Eats Customers API Sample
+- **Name:** Auth0 Eats Rewards API Sample
 
-- **Identifier:** `https://customers.example.com`
+- **Identifier:** `https://rewards.example.com`
 
 Leave the signing algorithm as `RS256`. It's the best option from a security standpoint.
 
@@ -188,5 +188,5 @@ curl --request GET \
 
 Copy and paste the updated cURL command into a terminal window and execute it. You should now get a valid response.
 
-You can also use any of the Auth0 Eats client applications to consume this API. The client applications require users to log in, obtaining an access token in the background, before they can call the Auth0 Eats Customers API.
+You can also use any of the Auth0 Eats client applications to consume this API. The client applications require users to log in, obtaining an access token in the background, before they can call the Auth0 Eats Rewards API.
 
